@@ -1,14 +1,15 @@
+  {% extends 'blog/base.html' %}
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <title>Топ 10 книг</title>
     </head>
-    <body>
-<div class="container">
-<div class="row">
-<div class="col-md-8 col-md-offset-2">
-<div style=text-align: center;><h2>Гарри Поттер и узник Азкабана</h2><p><h5>Рейтинг книги: 4.705<p>Количество прочитавших пользователей: 39205</h5><br/><hr></div><div style=text-align: center;><h2>Зеленая миля</h2><p><h5>Рейтинг книги: 4.676<p>Количество прочитавших пользователей: 18640</h5><br/><hr></div><div style=text-align: center;><h2>Унесенные ветром</h2><p><h5>Рейтинг книги: 4.660<p>Количество прочитавших пользователей: 23744</h5><br/><hr></div><div style=text-align: center;><h2>Граф Монте-Кристо</h2><p><h5>Рейтинг книги: 4.601<p>Количество прочитавших пользователей: 15835</h5><br/><hr></div><div style=text-align: center;><h2>Буря мечей</h2><p><h5>Рейтинг книги: 4.598<p>Количество прочитавших пользователей: 11403</h5><br/><hr></div><div style=text-align: center;><h2>А зори здесь тихие...</h2><p><h5>Рейтинг книги: 4.594<p>Количество прочитавших пользователей: 10734</h5><br/><hr></div><div style=text-align: center;><h2>Прислуга</h2><p><h5>Рейтинг книги: 4.590<p>Количество прочитавших пользователей: 10347</h5><br/><hr></div><div style=text-align: center;><h2>Крестный отец</h2><p><h5>Рейтинг книги: 4.575<p>Количество прочитавших пользователей: 12511</h5><br/><hr></div><div style=text-align: center;><h2>Властелин колец</h2><p><h5>Рейтинг книги: 4.570<p>Количество прочитавших пользователей: 19875</h5><br/><hr></div><div style=text-align: center;><h2>Цветы для Элджернона</h2><p><h5>Рейтинг книги: 4.566<p>Количество прочитавших пользователей: 50729</h5><br/><hr></div> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  
+        {% block content %}
+
+<div style=text-align: center;><h2>Гарри Поттер и узник Азкабана</h2><p><h5>Рейтинг книги: 4.705<p>Количество прочитавших пользователей: 39205</h5><br/><hr></div><div style=text-align: center;><h2>Зеленая миля</h2><p><h5>Рейтинг книги: 4.676<p>Количество прочитавших пользователей: 18640</h5><br/><hr></div><div style=text-align: center;><h2>Унесенные ветром</h2><p><h5>Рейтинг книги: 4.660<p>Количество прочитавших пользователей: 23744</h5><br/><hr></div><div style=text-align: center;><h2>Граф Монте-Кристо</h2><p><h5>Рейтинг книги: 4.601<p>Количество прочитавших пользователей: 15835</h5><br/><hr></div><div style=text-align: center;><h2>Буря мечей</h2><p><h5>Рейтинг книги: 4.598<p>Количество прочитавших пользователей: 11403</h5><br/><hr></div><div style=text-align: center;><h2>А зори здесь тихие...</h2><p><h5>Рейтинг книги: 4.594<p>Количество прочитавших пользователей: 10734</h5><br/><hr></div><div style=text-align: center;><h2>Прислуга</h2><p><h5>Рейтинг книги: 4.590<p>Количество прочитавших пользователей: 10347</h5><br/><hr></div><div style=text-align: center;><h2>Крестный отец</h2><p><h5>Рейтинг книги: 4.575<p>Количество прочитавших пользователей: 12511</h5><br/><hr></div><div style=text-align: center;><h2>Властелин колец</h2><p><h5>Рейтинг книги: 4.570<p>Количество прочитавших пользователей: 19875</h5><br/><hr></div><div style=text-align: center;><h2>Цветы для Элджернона</h2><p><h5>Рейтинг книги: 4.566<p>Количество прочитавших пользователей: 50729</h5><br/><hr></div> 
 <link type="text/css" rel="StyleSheet" href="http://bootstraptema.ru/plugins/2016/shieldui/style.css" />
 <script src="http://bootstraptema.ru/plugins/jquery/jquery-1.11.3.min.js"></script>
 <script src="http://bootstraptema.ru/plugins/2016/shieldui/script.js"></script>
@@ -60,8 +61,4 @@ data: [4.705,4.676,4.660,4.601,4.598,4.594,4.590,4.575,4.570,4.566,]
 });
 </script><!— /.График —>
 
-</div><!— /.col-md-8 col-md-offset-2 —>
-</div><!— /.row —>
-</div><!— /.container —>
-    </body>
-</html>
+    {% endblock content %}
